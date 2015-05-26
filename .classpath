@@ -6,5 +6,7 @@
 	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
 	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
 	<classpathentry kind="lib" path="C:/Android/Code/AndroidProject/libs/fastjson-1.1.34.android.jar"/>
+	<classpathentry kind="lib" path="C:/Android/Code/AndroidProject/jarsource/src.zip"/>
+	<classpathentry kind="lib" path="C:/Android/Code/AndroidProject/jarsource/httpcomponents-client-4.4.1-src.zip"/>
 	<classpathentry kind="output" path="bin/classes"/>
 </classpath>

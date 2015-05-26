@@ -19,6 +19,11 @@ public class MainActivity extends Activity {
 			public void onClick(View v) {
 				Intent intent = new Intent();
 				intent.setClass(MainActivity.this, DateAndWeather.class);
+				
+				Bundle b = new Bundle();   
+                b.putString("myKey", "Activity´«µÝµÄÖµ");                 
+                intent.putExtras( b );   
+                
 				MainActivity.this.startActivity(intent);
 			}
 		});

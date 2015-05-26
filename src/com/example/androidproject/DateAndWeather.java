@@ -22,6 +22,7 @@ public class DateAndWeather extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+	
 		setContentView(R.layout.activity_date_and_weather);
 		returnToMain();
 	}
@@ -47,7 +48,10 @@ public class DateAndWeather extends Activity {
 
 	public void getCurrentDate(View source) {
 		TextView tv = (TextView) findViewById(R.id.show);
-		tv.setText("当前时间:" + new java.util.Date());
+
+		String rString = getIntent().getExtras().getString("myKey");
+
+		tv.setText(rString + "：当前时间:" + new java.util.Date());
 	}
 
 	TextView response;

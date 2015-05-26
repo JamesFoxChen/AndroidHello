@@ -6,6 +6,8 @@ import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.util.EntityUtils;
 
+import com.example.bean.Person;
+
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -49,9 +51,10 @@ public class DateAndWeather extends Activity {
 	public void getCurrentDate(View source) {
 		TextView tv = (TextView) findViewById(R.id.show);  
 
-		String rString = getIntent().getExtras().getString("myKey");
+		String s = getIntent().getExtras().getString("keyString");
+		Person p = (Person) getIntent().getExtras().getSerializable("keyObject");  
 
-		tv.setText(rString + "：当前时间:" + new java.util.Date());
+		tv.setText("keyString:"+s+" object:"+String.valueOf(p.getAge()) + "：当前时间:" + new java.util.Date());
 	}
 
 	TextView response;

@@ -1,8 +1,11 @@
 package com.example.androidproject;
 
-import android.os.Bundle;
+import com.example.bean.Person;
+
 import android.app.Activity;
 import android.content.Intent;
+import android.os.Bundle;
+import android.os.Parcelable;
 import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
@@ -19,19 +22,26 @@ public class MainActivity extends Activity {
 			public void onClick(View v) {
 				Intent intent = new Intent();
 				intent.setClass(MainActivity.this, DateAndWeather.class);
-				
-				Bundle b = new Bundle();   
-                b.putString("myKey", "Activity传递的值");                 
-                intent.putExtras( b );   
-                
+
+				Bundle b = new Bundle();
+				b.putString("keyString", "Activity传递的值");
+
+				Person p = new Person();
+				p.setAge(11);
+				p.setName("11Name");
+				//传递对象，对象需继承于Serializable
+				b.putSerializable("keyObject",p);
+
+				intent.putExtras(b);
+
 				MainActivity.this.startActivity(intent);
 			}
 		});
 
-		Button btnBall=(Button)findViewById(R.id.btnBall);
+		Button btnBall = (Button) findViewById(R.id.btnBall);
 		btnBall.setOnClickListener(new Button.OnClickListener() {
-			public void onClick(View v){
-				Intent intent=new Intent();
+			public void onClick(View v) {
+				Intent intent = new Intent();
 				intent.setClass(MainActivity.this, Ball.class);
 				MainActivity.this.startActivity(intent);
 			}

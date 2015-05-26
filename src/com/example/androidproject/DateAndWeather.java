@@ -47,7 +47,7 @@ public class DateAndWeather extends Activity {
 	}
 
 	public void getCurrentDate(View source) {
-		TextView tv = (TextView) findViewById(R.id.show);
+		TextView tv = (TextView) findViewById(R.id.show);  
 
 		String rString = getIntent().getExtras().getString("myKey");
 

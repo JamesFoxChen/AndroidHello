@@ -6,5 +6,6 @@
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_ball">Ball</string>
     <string name="title_activity_date_and_weather">DateAndWeather</string>
-
+    <string name="title_activity_list_view_demo">ListViewDemo</string>
+    <string name="dividerimage">#f9b68b</string>
 </resources>

@@ -45,9 +45,21 @@ public class MainActivity extends Activity {
 				intent.setClass(MainActivity.this, Ball.class);
 				MainActivity.this.startActivity(intent);
 			}
+		});		
+		
+		btnListViewClick();
+	}
+    
+	private void btnListViewClick() {
+		Button btn = (Button) findViewById(R.id.btnListView);
+		btn.setOnClickListener(new Button.OnClickListener() {
+			public void onClick(View v) {
+				Intent intent = new Intent();
+				intent.setClass(MainActivity.this, ListViewDemo.class);
+				MainActivity.this.startActivity(intent);
+			}
 		});
 	}
-
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.

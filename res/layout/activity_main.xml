@@ -26,14 +26,23 @@
         android:layout_below="@+id/btnTime"
         android:layout_marginTop="75dp"
         android:text="小球" />
-    
+
     <Button
-      android:id="@+id/btnListView"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:layout_alignLeft="@+id/btnListView"
-      android:layout_below="@+id/btnListView"
-      android:layout_marginLeft="45dp"
-      android:layout_marginTop="110dp"
-      android:text="列表" />
+        android:id="@+id/btnListView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnBall"
+        android:layout_below="@+id/btnTime"
+        android:layout_marginTop="100dp"
+        android:text="列表" />
+
+    <Button
+        android:id="@+id/btnDateTimeDemo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnBall"
+        android:layout_below="@+id/btnBall"
+        android:layout_marginTop="125dp"
+        android:text="列表" />
+
 </RelativeLayout>

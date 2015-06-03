@@ -1,14 +1,16 @@
 package com.example.androidproject;
 
-import com.example.bean.Person;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Parcelable;
 import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
+
+import com.avos.avoscloud.AVOSCloud;
+import com.avos.avoscloud.AVObject;
+import com.example.bean.Person;
+
 
 public class MainActivity extends Activity {
 
@@ -48,8 +50,18 @@ public class MainActivity extends Activity {
 		});		
 		
 		btnListViewClick();
+		btnDateTimeDemoClick();
+	/*	avosCreate();*/
 	}
     
+	private void avosCreate()
+	{
+		AVOSCloud.initialize(this, "b8f9mag81ij216uespf0i6ne0joyqgyzd8z0m6l6ql1n1spm", "ca13nre9ymi7vna0ba9w3jteg9rxws9506i5qgex9edgwuae");	
+		AVObject testObject = new AVObject("TestObject");
+		testObject.put("foo", "bar");
+		testObject.saveInBackground();
+	}
+	
 	private void btnListViewClick() {
 		Button btn = (Button) findViewById(R.id.btnListView);
 		btn.setOnClickListener(new Button.OnClickListener() {
@@ -60,6 +72,20 @@ public class MainActivity extends Activity {
 			}
 		});
 	}
+	
+	private void btnDateTimeDemoClick()
+	{
+		Button btn = (Button) findViewById(R.id.btnDateTimeDemo);
+		btn.setOnClickListener(new Button.OnClickListener() {
+			public void onClick(View v) {
+				Intent intent = new Intent();
+				intent.setClass(MainActivity.this, DateTimeDemo.class);
+				MainActivity.this.startActivity(intent);
+			}
+		});
+	}
+	
+	
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.

@@ -8,4 +8,28 @@
     <string name="title_activity_date_and_weather">DateAndWeather</string>
     <string name="title_activity_list_view_demo">ListViewDemo</string>
     <string name="dividerimage">#f9b68b</string>
+    <string name="mc">mc</string>
+    <string name="mPlus">m+</string>
+    <string name="mMinus">m-</string>
+    <string name="mr">mr</string>
+    <string name="C">C</string>
+    <string name="PlusAndMinusLog">+/-</string>
+    <string name="DivisionLog">/</string>
+    <string name="MultiplicationLog">*</string>
+    <string name="Number7">7</string>
+    <string name="Number8">8</string>
+    <string name="Number9">9</string>
+    <string name="SubtractionLog">-</string>
+    <string name="Number4">4</string>
+    <string name="Number5">5</string>
+    <string name="Number6">6</string>
+    <string name="AdditionLog">+</string>
+    <string name="Number1">1</string>
+    <string name="Number2">2</string>
+    <string name="Number3">3</string>
+    <string name="Number0">0</string>
+    <string name="Point">.</string>
+    <string name="EqualLog">=</string>
+    <string name="title_activity_date_time_demo">DateTimeDemo</string>
+
 </resources>

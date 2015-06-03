@@ -6,6 +6,7 @@
 
     <uses-permission android:name="android.permission.SEND_SMS" />
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <uses-sdk
         android:minSdkVersion="8"
@@ -36,6 +37,10 @@
         <activity
             android:name="com.example.androidproject.ListViewDemo"
             android:label="@string/title_activity_list_view_demo" >
+        </activity>
+        <activity
+            android:name="com.example.androidproject.DateTimeDemo"
+            android:label="@string/title_activity_date_time_demo" >
         </activity>
     </application>
 

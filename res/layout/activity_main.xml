@@ -24,7 +24,7 @@
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/btnTime"
         android:layout_below="@+id/btnTime"
-        android:layout_marginTop="75dp"
+        android:layout_marginTop="16dp"
         android:text="小球" />
 
     <Button
@@ -32,17 +32,26 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/btnBall"
-        android:layout_below="@+id/btnTime"
-        android:layout_marginTop="100dp"
+        android:layout_below="@+id/btnBall"
+        android:layout_marginTop="15dp"
         android:text="列表" />
 
     <Button
         android:id="@+id/btnDateTimeDemo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/btnBall"
-        android:layout_below="@+id/btnBall"
-        android:layout_marginTop="125dp"
+        android:layout_alignLeft="@+id/btnListView"
+        android:layout_below="@+id/btnListView"
+        android:layout_marginTop="18dp"
         android:text="列表" />
+
+    <Button
+        android:id="@+id/btnBrowser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnBrowser"
+        android:layout_below="@+id/btnBrowser"
+        android:layout_marginTop="20dp"
+        android:text="浏览器" />
 
 </RelativeLayout>

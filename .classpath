@@ -3,8 +3,9 @@
 	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
 	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
 	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
-	<classpathentry exported="true" kind="lib" path="C:/Android/Code/AndroidProject/jarsource/src.zip"/>
-	<classpathentry exported="true" kind="lib" path="C:/Android/Code/AndroidProject/jarsource/httpcomponents-client-4.4.1-src.zip"/>
+	<classpathentry kind="lib" path="C:/Android/Code/AndroidHello/jarsource/Android source-19_r02.zip"/>
+	<classpathentry kind="lib" path="C:/Android/Code/AndroidHello/jarsource/httpcomponents-client-4.4.1-src.zip"/>
+	<classpathentry kind="lib" path="C:/Android/Code/AndroidHello/jarsource/src.zip"/>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="src" path="gen"/>
 	<classpathentry kind="output" path="bin/classes"/>

@@ -31,5 +31,6 @@
     <string name="Point">.</string>
     <string name="EqualLog">=</string>
     <string name="title_activity_date_time_demo">DateTimeDemo</string>
+    <string name="title_activity_browser_demo">BrowserDemo</string>
 
 </resources>

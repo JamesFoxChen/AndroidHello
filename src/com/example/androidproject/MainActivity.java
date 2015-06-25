@@ -51,6 +51,7 @@ public class MainActivity extends Activity {
 		
 		btnListViewClick();
 		btnDateTimeDemoClick();
+		btnBrowser();
 	/*	avosCreate();*/
 	}
     
@@ -85,7 +86,17 @@ public class MainActivity extends Activity {
 		});
 	}
 	
-	
+	private void btnBrowser() {
+		Button btn = (Button) findViewById(R.id.btnBrowser);
+		btn.setOnClickListener(new Button.OnClickListener() {
+			public void onClick(View v) {
+				Intent intent = new Intent();
+				intent.setClass(MainActivity.this, BrowserDemo.class);
+				MainActivity.this.startActivity(intent);
+			}
+		});
+	}
+
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.

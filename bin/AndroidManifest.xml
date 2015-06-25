@@ -8,15 +8,13 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
-    <uses-sdk
-        android:minSdkVersion="8"
-        android:targetSdkVersion="18" />
-
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
+        <uses-library android:name="android.test.runner" />
+
         <activity
             android:name="com.example.androidproject.MainActivity"
             android:label="@string/app_name" >
@@ -42,6 +40,18 @@
             android:name="com.example.androidproject.DateTimeDemo"
             android:label="@string/title_activity_date_time_demo" >
         </activity>
+        <activity
+            android:name="com.example.androidproject.BrowserDemo"
+            android:label="@string/title_activity_browser_demo" >
+        </activity>
     </application>
+
+    <instrumentation
+        android:name="android.test.instrumentationTestRunner"
+        android:targetPackage="com.example.test" />
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
 
 </manifest>

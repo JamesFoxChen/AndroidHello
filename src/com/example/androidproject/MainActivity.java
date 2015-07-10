@@ -53,6 +53,22 @@ public class MainActivity extends Activity {
 		btnDateTimeDemoClick();
 		btnBrowser();
 	/*	avosCreate();*/
+		//hide();
+	}
+	
+	private void hide()
+	{
+		Button btnTime = (Button) findViewById(R.id.btnTime);
+		btnTime.setVisibility(View.INVISIBLE);
+		
+		Button btnListView = (Button) findViewById(R.id.btnListView);
+		btnListView.setVisibility(View.INVISIBLE);
+		
+		Button btnBall = (Button) findViewById(R.id.btnBall);
+		btnBall.setVisibility(View.INVISIBLE);
+		
+		Button btnDateTimeDemo = (Button) findViewById(R.id.btnDateTimeDemo);
+		btnDateTimeDemo.setVisibility(View.INVISIBLE);
 	}
     
 	private void avosCreate()

@@ -40,7 +40,7 @@ public class BrowserDemo extends Activity {
         webSettings.setDomStorageEnabled(true);
         webSettings.setAppCacheEnabled(true);
         webSettings.setCacheMode(WebSettings.LOAD_NO_CACHE);
-
+ 
 		//webView.loadUrl("http://www.baidu.com/");
 		//webView.loadUrl("http://192.168.1.95:60002/shopInfo/ShopIndex?bid=10015");
 	    webView.loadUrl("http://192.168.1.95:60002/content/ShopMng/html/shopLogin.html");
